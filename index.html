@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/bife.png">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>ChurrascometroUPGRADE</title>
+
+</head>
+
+<body>
+
+    <div id="top-bar">
+        <img class="icon-top-bar" src="./images/bife.png" alt="bife">
+        <h1>Churrascometro2.0</h1>
+    </div>
+
+    <div id="header">
+        <div class="img-header"></div>
+        <div class="form-container">
+            <h2>Descubra quanto você precisa comprar!</h2>
+            <input id="adultosTT" name="adultosTT" type="number" placeholder="Quantidade de adultos totais">
+            <input id="adultos" name="adultos" type="number" placeholder="Adultos que irão beber">
+            <input id="criancas" name="criancas" type="number" placeholder="Quantidade de crianças">
+            <input id="suco" name="suco" type="number" placeholder="Pessoas que só bebem suco">
+            <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">
+            <button onclick="calcular()">Calcular</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <div id="creditos">
+        <button>Créditos</button>
+        <a href="https://www.flaticon.com/br/icones-gratis/bife" title="bife ícones">Bife ícones criados por Febrian Hidayat - Flaticon</a>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

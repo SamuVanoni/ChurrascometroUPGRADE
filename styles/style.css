@@ -33,7 +33,6 @@ h1{
     background-size: cover;
     max-width: 480px;
     margin: auto;
-    /* border-radius: 10px; */
     height: 300px;
 }
 
@@ -64,10 +63,91 @@ input{
     text-align: center;
 }
 
-button{
+#button1{
     padding: 10px;
     margin: 4px auto;
     background-color: #F4B183;
     border: none;
     border-radius: 5px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#button1:hover{
+    padding: 13px;
+}
+
+#resultado{
+    margin: 10px;
+    text-align: center;
+}
+
+:root{
+    --color-neutral-10: #171717;
+    --color-neutral-40: #f5f5f5;
+}
+
+footer{
+    padding-top: 40px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    padding: 3rem 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+}
+
+#footer_social_media .footer_link i{
+    font-size: 1.25rem;
+}
+
+#input_group button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.125rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        flex-direction: column;
+    }
 }

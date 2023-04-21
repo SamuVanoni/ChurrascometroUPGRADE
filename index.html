@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/bife.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,23 +27,54 @@
         <div class="form-container">
             <h2>Descubra quanto você precisa comprar!</h2>
             <input id="adultosTT" name="adultosTT" type="number" placeholder="Quantidade de adultos totais">
-            <input id="adultos" name="adultos" type="number" placeholder="Adultos que irão beber">
+            <input id="adultos" name="adultos" type="number" placeholder="Adultos que irão beber álcool">
+            <input id="sucoAdultos" name="suco" type="number" placeholder="Somente bebem suco (adultos)">
             <input id="criancas" name="criancas" type="number" placeholder="Quantidade de crianças">
-            <input id="suco" name="suco" type="number" placeholder="Pessoas que só bebem suco">
+            <input id="sucoCriancas" name="suco" type="number" placeholder="Somente bebem suco (crianças)">
             <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">
-            <button onclick="calcular()">Calcular</button>
+            <button id="button1" onclick="calcular()">Calcular</button>
             <div id="resultado"></div>
         </div>
     </div>
 
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <p>Criado por:</p>
+                <h3>Samuel Vanoni</h3>
+                <br>
+                <p>Redes para contato:</p>
+                <div id="footer_social_media">
+                    <a href="https://wa.me/+5512996317649" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-fade" style="color: #01cb29;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/samuvanoni/" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram fa-fade" style="color: #d902d2;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuelvanoni/" class="footer_link" id="linkedin">
+                        <i class="fa-brands fa-linkedin fa-fade" style="color: #005eff;"></i>
+                    </a>
+                    <a href="https://github.com/SamuVanoni" class="footer_link" id="github">
+                        <i class="fa-brands fa-github fa-fade" style="color: #005eff;"></i>
+                    </a>
+                </div>
+            </div>
 
+            <div id="footer_credits">
+                <div id="input_group">
+                    <button onclick="creditos()">
+                        <i class="fa-regular fa-folder-open"></i> Créditos
+                    </button>
+                </div>
+            </div>
+        </div>
 
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
 
-    <br><br><br><br><br><br><br><br><br><br>
-    <div id="creditos">
-        <button>Créditos</button>
-        <a href="https://www.flaticon.com/br/icones-gratis/bife" title="bife ícones">Bife ícones criados por Febrian Hidayat - Flaticon</a>
-    </div>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
